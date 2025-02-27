@@ -53,7 +53,7 @@ class ContactService {
             _id: ObjectId.isValid(id) ? new ObjectId : null,
         });
     }
-    async updated(id, payload) {
+    async update(id, payload) {
         const filter = {
             _id: ObjectId.isValid(id) ? new ObjectId(id) : null,
         };
